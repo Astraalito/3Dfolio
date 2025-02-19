@@ -62,7 +62,7 @@ const ShaderCanvas = ({ material }) => {
             gl={{ preserveDrawingBuffer: true }}
         >
             <Suspense fallback={<CanvasLoader />}>
-                <OrbitControls enableZoom={false} autoRotate={true} />
+                <OrbitControls enableZoom={false} autoRotate={true} enablePan={false} />
                 <hemisphereLight intensity={0.33} groundColor='white' />
                 <spotLight
                     position={[20, 50, 10]}
