@@ -34,7 +34,7 @@ import schneider from "./company/schneider.png";
 import thales from "./company/thales.png";
 import oldgames from "./company/og-logo.png";
 
-import brutus from "./brutus.jpg";
+import brutus from "./brutus.jpeg";
 import showcase from "./showcase.gif"
 import fasterThanYou from "./fasterThanU.png";
 
