@@ -48,7 +48,7 @@ const Works = () => {
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
           Cette section présente mes compétences et expériences à travers des exemples concrets.
-          Chaque projet est décrit brièvement, avec des démonstrations ou liens vers leurs sites.
+          Chaque projet est décrit brièvement, avec des démonstrations ou liens vers leur site.
           Découvrez comment je donne vie à des idées avec créativité et passion !
         </motion.p>
       </div>

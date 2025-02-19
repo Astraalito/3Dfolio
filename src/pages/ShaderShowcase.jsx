@@ -71,7 +71,7 @@ const ShaderShowcase = () => {
                 <section  className="sm:px-16 px-6 sm:py-20 py-20 max-w-7xl mx-auto relative z-0 w-full">
                     <motion.div variants={textVariant()}>
                         <p className={`${styles.sectionSubText} text-center`}>
-                        Mes Shaders et VFX développé en GLSL
+                        Mes Shaders et VFX développés en GLSL
                         </p>
                         <h2 className={`${styles.sectionHeadText} text-center`}>
                         Shader Showcase

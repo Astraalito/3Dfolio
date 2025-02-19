@@ -121,7 +121,7 @@ const experiences = [
     date: "Janvier 2019 - Mars 2019",
     points: [
       "Développement d'une application XR d'assistance en cuisine au sein de l'équipe Domotique de l'INRIA.",
-      "Maquettage et conceptualisation d'une application en réalite mixte.",
+      "Maquettage et conceptualisation d'une application en réalité mixte.",
       "Réalisation de l'application avec Unity et SteamVR avec comme support un HTC Vive."
     ],
     technologies: "Développement VR: C#, Unity, SteamVR"
@@ -147,8 +147,8 @@ const experiences = [
     date: "Septembre 2020 - Aout 2022",
     points: [
       "Développement d'un moteur de rendu et de configuration des produits Schneider en 3D sur navigateur.",
-      "Modification de l'APÏ relatives aux metadonnées des produits Schneider.",
-      "Réalisation en autonomie d'une application AR d'aide à la maintenance de panneaux éléctrique."
+      "Modification de l'APÏ relatives aux métadonnées des produits Schneider.",
+      "Réalisation en autonomie d'une application AR d'aide à la maintenance de panneaux éléctriques."
     ],
     technologies: "Développement 3D: Java, JS, ThreeJS, Blender"
   },
@@ -159,8 +159,8 @@ const experiences = [
     iconBg: "#EADDC0",
     date: "Juin 2024 - Novembre 2024",
     points: [
-      "Concéption et protoypage du jeu de société BRUTUS! et de ses règles.",
-      "Présentation du jeu à des évenements tel que le Festival International du Jeu de Cannes ou la Japan Expo.",
+      "Conception et prototypage du jeu de société BRUTUS! et de ses règles.",
+      "Présentation du jeu à des évenements tels que le Festival International du Jeu de Cannes ou la Japan Expo.",
       "Création du site internet de Old-Games et de BRUTUS!"
     ],
     technologies: "GameDesign, Développement Web: React, R3F"
@@ -183,7 +183,7 @@ const projects = [
     name: "BRUTUS!",
     type:"Jeu de société",
     description:
-      "BRUTUS! est un jeu de société développé en collaboration avec Old-Games ! (15K sur Kickstarter !) J'ai particpé au développement du jeu et j'ai fais leurs site internet",
+      "BRUTUS! est un jeu de société développé en collaboration avec Old-Games ! (15K sur Kickstarter !) J'ai particpé au développement du jeu et j'ai fais leur site internet",
     tags: [
       {
         name: "react",
@@ -252,7 +252,7 @@ const brutusInfo = {
     type: "Jeu de société",
     links: "https://old-games-edition.com/fr/brutus",
     imgBg: brutusBg,
-    nutshell: "Dans Brutus! Chaque joueur incarne un Ludus, une maison de gladiateurs dont la survie dépend des choix avisés de son chef, le Laniste. Utilisez leur capacité unique à votre avantage. Pariez judicieusement sur les combats que vous remporterez : que vos gladiateurs obtiennent les lauriers de la victoire ou perdent misérablement, chacun d'eux vous rapprochera un peu plus de votre ascension.",
+    nutshell: "Dans Brutus! chaque joueur incarne un Ludus, une maison de gladiateurs dont la survie dépend des choix avisés de son chef, le Laniste. Utilisez leur capacité unique à votre avantage. Pariez judicieusement sur les combats que vous remporterez : que vos gladiateurs obtiennent les lauriers de la victoire ou perdent misérablement, chacun d'eux vous rapprochera un peu plus de votre ascension.",
     description:[
       {
         title: "Création du jeu",
