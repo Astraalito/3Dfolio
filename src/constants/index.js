@@ -183,7 +183,7 @@ const projects = [
     name: "BRUTUS!",
     type:"Jeu de société",
     description:
-      "BRUTUS! est un jeu de société développé en collaboration avec Old-Games ! (15K sur Kickstarter !) J'ai particpé au développement du jeu et j'ai fais leur site internet",
+      "BRUTUS! est un jeu de société développé en collaboration avec Old-Games ! (15K sur Kickstarter !) J'ai particpé à la conception du jeu et j'ai réalisé leur site internet",
     tags: [
       {
         name: "react",
