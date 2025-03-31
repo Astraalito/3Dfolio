@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import { About, Contact, Experience, Hero, Navbar, Tech, Works, StarsCanvas } from "./../components";
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
           <Contact />
           <StarsCanvas />
         </div>
+        <Footer />
       </div>
   );
 }
