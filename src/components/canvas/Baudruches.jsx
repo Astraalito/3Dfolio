@@ -1,26 +1,27 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { useGLTF } from '@react-three/drei';
 import { useFrame } from '@react-three/fiber';
 
 
 const colorsBaudruches = [
-    [1, 0, 0], // Rouge
-    [0, 1, 0], // Vert
-    [1, 1, 0], // Jaune
-    [1, 0, 1], // Magenta
-    [0, 1, 1], // Cyan
+    "0x60e5e5",
+    "0xDB6A8F",
+    "0x96e54b",
+    "0x70C7C6",
+    "0xffd580",
   ];
 
 const BaudrucheModel = ({ position, color }) => {
     const { scene } = useGLTF("./balloon/baudruche.gltf");
     const meshRef = useRef();
+    const [isPopped, setIsPopped] = useState(false);
 
     useEffect(() => {
         if (meshRef.current) {
             meshRef.current.traverse((child) => {
                 if (child.isMesh) {
                     child.material = child.material.clone();
-                    child.material.color.setRGB(...color);
+                    child.material.color.setHex(color);
                 }
             });
         }
@@ -32,11 +33,21 @@ const BaudrucheModel = ({ position, color }) => {
         }
     });
 
+    const handleClick = () => {
+        setIsPopped(true);
+
+        const popSound = new Audio("./sfx/pop.mp3");
+        popSound.play();
+    };
+
+    if (isPopped) return null; // Ne pas afficher le ballon s'il est éclaté
+
     return <primitive 
         ref={meshRef}
         object={scene.clone()} 
         position={position} 
         scale={0.7} 
+        onClick={handleClick}
     />;
 };
 
