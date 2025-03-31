@@ -4,6 +4,7 @@ import { Float, Preload, PresentationControls, useGLTF } from "@react-three/drei
 import * as THREE from 'three';
 
 import CanvasLoader from "../Loader";
+import Baudruches from "./Baudruches";
 
 const SmallWorld = ({ isMobile }) => {
 
@@ -111,6 +112,7 @@ const SmallWorldCanvas = () => {
           scale={isMobile ? 0.35 : 0.6}
         >
               <SmallWorld isMobile={isMobile} />
+              <Baudruches />
         </group>
       </Suspense>
 
