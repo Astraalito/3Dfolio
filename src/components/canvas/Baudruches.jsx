@@ -75,12 +75,11 @@ const Baudruches = ({ numberBaudruche = 20, rayon = 8, yPosition = -7.3, offset 
       const angle = Math.random() * Math.PI * 2;
       const offSetRadius = ((Math.random() - 0.5) * 2) * offset + radius;
       const x = Math.cos(angle) * offSetRadius;
-      const y = ((Math.random() - 0.5) * 2) * offset * yPosition;
+      const y = (((Math.random() - 0.5) * 2) * offset * 10) + yPosition;
       const z = Math.sin(angle) * offSetRadius;
       return [x, y, z];
     };
   
-    // ⛔ Ne change jamais, pas recalculé à chaque render
     const balloons = useMemo(() => {
       const arr = [];
       for (let i = 0; i < numberBaudruche; i++) {
