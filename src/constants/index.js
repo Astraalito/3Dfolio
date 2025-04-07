@@ -19,6 +19,7 @@ import {
   schneider,
   oldgames,
   brutus,
+  artsy,
   brutusBg,
   brutus1,
   brutus2,
@@ -179,6 +180,28 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+    name: "[AR]tsy",
+    type:"Application Immersive",
+    description:
+      "[AR]tsy est une application de visualisation d'oeuvre d'art en Réalité Augmentée. Visualisez les plus grands chefs d'oeuvre en taille réelle dans votre salon !",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: artsy,
+    linkTo: "https://github.com/Astraalito/ARtsy",
+  },
   {
     name: "BRUTUS!",
     type:"Jeu de société",
