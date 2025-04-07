@@ -15,7 +15,7 @@ const Footer = () => {
             </a>
           </div>
           <p className="text-base">Made with <span className="text-red-500">❤</span> by Nico</p>
-          <p className="text-base text-sm">Ne pas cliquer <a href="https://matias.me/nsfw/" target="_blank" className="text-purple-500 hover:text-purple-400">ici</a>.</p>
+          <p className="text-sm">Ne pas cliquer <a href="https://matias.me/nsfw/" target="_blank" className="text-purple-500 hover:text-purple-400">ici</a>.</p>
         </footer>
       );
 };
