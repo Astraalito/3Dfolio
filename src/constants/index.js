@@ -20,6 +20,7 @@ import {
   oldgames,
   brutus,
   artsy,
+  quasar,
   brutusBg,
   brutus1,
   brutus2,
@@ -181,8 +182,30 @@ const testimonials = [
 
 const projects = [
   {
+    name: "Quasar Immersive",
+    type:"Expérience Web et VR",
+    description:
+      "Quasar est une application immersive et éducative sur l'espace. Plongez au sein du cosmos, depuis votre navigateur ou en réalité virtuelle !",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: quasar,
+    linkTo: "https://quasar-immersive.vercel.app",
+  },
+  {
     name: "[AR]tsy",
-    type:"Application Immersive",
+    type:"Réalité Augmentée",
     description:
       "[AR]tsy est une application de visualisation d'oeuvre d'art en Réalité Augmentée. Visualisez les plus grands chefs d'oeuvre en taille réelle dans votre salon !",
     tags: [
@@ -224,28 +247,28 @@ const projects = [
     image: brutus,
     linkTo: "/brutus",
   },
-  {
-    name: "Faster Than You!!!",
-    type:"Jeu vidéo 2D",
-    description:
-      "Un Party-Game de course entre ami ! Dans Faster Than You!!! Prends de vitesse ton adversaire et sois le dernier joueur à rester sur l'écran.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: fasterThanYou,
-    linkTo: "https://astraalito.itch.io/faster-than-you",
-  },
+  // {
+  //   name: "Faster Than You!!!",
+  //   type:"Jeu vidéo 2D",
+  //   description:
+  //     "Un Party-Game de course entre ami ! Dans Faster Than You!!! Prends de vitesse ton adversaire et sois le dernier joueur à rester sur l'écran.",
+  //   tags: [
+  //     {
+  //       name: "nextjs",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "supabase",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "css",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: fasterThanYou,
+  //   linkTo: "https://astraalito.itch.io/faster-than-you",
+  // },
   {
     name: "Shader Showcase",
     type:"Shaders / GLSL",

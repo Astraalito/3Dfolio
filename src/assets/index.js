@@ -34,8 +34,9 @@ import schneider from "./company/schneider.png";
 import thales from "./company/thales.png";
 import oldgames from "./company/og-logo.png";
 
-import brutus from "./brutus.jpeg";
+import quasar from "./quasarImg.png";
 import artsy from "./artsy.jpg";
+import brutus from "./brutus.jpeg";
 import showcase from "./showcase.gif"
 import fasterThanYou from "./fasterThanU.png";
 
@@ -84,6 +85,7 @@ export {
   oldgames,
   brutus,
   artsy,
+  quasar,
   brutusBg,
   brutus1,
   brutus2,
