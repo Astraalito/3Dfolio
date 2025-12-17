@@ -9,35 +9,35 @@ import Baudruches from "./Baudruches";
 const SmallWorld = ({ isMobile }) => {
 
   const baloon = useGLTF("./balloon/balloon.glb");
-  const gnome = useGLTF("https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/young-korrigan/model.gltf");
+  // const gnome = useGLTF("https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/young-korrigan/model.gltf");
 
-  const mixer = useRef(new THREE.AnimationMixer(gnome.scene));
+  // const mixer = useRef(new THREE.AnimationMixer(gnome.scene));
 
-  useEffect(() => {
-    if (gnome.animations && gnome.animations.length > 0) {
-      // Trouver l'animation "pose_jeune"
-      const poseJeuneAnimation = gnome.animations.find(anim => anim.name === 'pose_jeune');
+  // useEffect(() => {
+  //   if (gnome.animations && gnome.animations.length > 0) {
+  //     // Trouver l'animation "pose_jeune"
+  //     const poseJeuneAnimation = gnome.animations.find(anim => anim.name === 'pose_jeune');
       
-      if (poseJeuneAnimation) {
-        const action = mixer.current.clipAction(poseJeuneAnimation);
-        action.play(); // Démarre l'animation
-        action.setLoop(THREE.LoopRepeat, Infinity); // Fait tourner l'animation en boucle
-        action.setEffectiveTimeScale(1); // Contrôle la vitesse si besoin
-      }
-    }
-  }, [gnome.animations]);
+  //     if (poseJeuneAnimation) {
+  //       const action = mixer.current.clipAction(poseJeuneAnimation);
+  //       action.play(); // Démarre l'animation
+  //       action.setLoop(THREE.LoopRepeat, Infinity); // Fait tourner l'animation en boucle
+  //       action.setEffectiveTimeScale(1); // Contrôle la vitesse si besoin
+  //     }
+  //   }
+  // }, [gnome.animations]);
 
-  useEffect(() => {
-    const clock = new THREE.Clock();
-    const animate = () => {
-      const delta = clock.getDelta();
-      if (mixer.current) {
-        mixer.current.update(delta); // Met à jour l'animation
-      }
-      requestAnimationFrame(animate);
-    };
-    animate();
-  }, []);
+  // useEffect(() => {
+  //   const clock = new THREE.Clock();
+  //   const animate = () => {
+  //     const delta = clock.getDelta();
+  //     if (mixer.current) {
+  //       mixer.current.update(delta); // Met à jour l'animation
+  //     }
+  //     requestAnimationFrame(animate);
+  //   };
+  //   animate();
+  // }, []);
 
 
   return (
@@ -52,13 +52,13 @@ const SmallWorld = ({ isMobile }) => {
               object={baloon.scene}
             />
           </mesh>
-          <mesh>
+          {/* <mesh>
             <primitive
               object={gnome.scene}
               position={[-0.84, -6.7, 0.12]}
               scale={[3,3,3]}
             />
-          </mesh>
+          </mesh> */}
         </Float>
       </PresentationControls>
     </group>
